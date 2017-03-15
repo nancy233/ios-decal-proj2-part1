@@ -22,7 +22,6 @@
 		B90DD88D1E788A810076B857 /* ChooseTableVieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90DD88C1E788A810076B857 /* ChooseTableVieCell.swift */; };
 		B90DD88F1E788A8D0076B857 /* FeedTableVieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90DD88E1E788A8D0076B857 /* FeedTableVieCell.swift */; };
 		B9AC093B1E79009F00D69494 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AC093A1E79009F00D69494 /* ImageViewController.swift */; };
-		B9AC093D1E790DF800D69494 /* snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AC093C1E790DF800D69494 /* snap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		B90DD88C1E788A810076B857 /* ChooseTableVieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTableVieCell.swift; sourceTree = "<group>"; };
 		B90DD88E1E788A8D0076B857 /* FeedTableVieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableVieCell.swift; sourceTree = "<group>"; };
 		B9AC093A1E79009F00D69494 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		B9AC093C1E790DF800D69494 /* snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				4196F2DC1E650ECA009916E4 /* ImageFeed.swift */,
-				B9AC093C1E790DF800D69494 /* snap.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 				B90DD88D1E788A810076B857 /* ChooseTableVieCell.swift in Sources */,
 				417986C91E664AE40050E1DF /* imageCollectionVieCell.swift in Sources */,
 				4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */,
-				B9AC093D1E790DF800D69494 /* snap.swift in Sources */,
 				B90DD88F1E788A8D0076B857 /* FeedTableVieCell.swift in Sources */,
 				B90DD8891E7883040076B857 /* ChooseFeedViewController.swift in Sources */,
 				4196F2CB1E6509E8009916E4 /* AppDelegate.swift in Sources */,

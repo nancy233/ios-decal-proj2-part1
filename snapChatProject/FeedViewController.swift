@@ -19,7 +19,6 @@ class FeedViewController:UIViewController, UITableViewDelegate, UITableViewDataS
     var image: UIImage?
     var showImage:UIImage?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         FeedTableView.delegate = self
@@ -47,12 +46,12 @@ class FeedViewController:UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let object = threads[theFeed!]?[indexPath.row]
-        showImage = object?.image
-        if object?.read==false{
+        showImage = threads[theFeed!]?[indexPath.row]
+        let cell = tableView.cellForRow(at: indexPath) as! FeedTableVieCell
+        if cell.read==false{
+            cell.read = true
             performSegue(withIdentifier: "ToFinalImage", sender: self)
-            object?.read = true
-            
+            FeedTableView.reloadData()
         }
     }
 
@@ -68,11 +67,8 @@ class FeedViewController:UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBAction func unwindChooseFeed(segue:UIStoryboardSegue){
         if let index = theFeed {
-            let mySnap = snap()
-            mySnap.image = image
-            mySnap.poster = "Nan"
-            mySnap.timer = String(describing: Date(timeIntervalSinceNow: 60))
-            threads[index]?.append(mySnap)
+            threads[index]?.append(image!)
+
         }
         
     }
